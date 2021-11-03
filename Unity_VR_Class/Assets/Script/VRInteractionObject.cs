@@ -34,6 +34,7 @@ public class VRInteractionObject : MonoBehaviour
     public void OnPointerExit()
     {
         print("注視點離開");
+        onExit.Invoke();
     }
     /// <summary>
     /// VR 注視點看到此物件並點選互動按鈕 Click
@@ -41,5 +42,6 @@ public class VRInteractionObject : MonoBehaviour
     public void OnPointerClick()
     {
         print("注視點點擊");
+        onClick.Invoke();
     }
 }
